@@ -1,0 +1,32 @@
+.link {
+  position: relative;
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+.underline {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: var(--color-border);
+  opacity: 0.3;
+  transition: opacity var(--duration-normal) var(--ease-default);
+  display: block;
+}
+
+.link:hover .underline,
+.link:focus-visible .underline {
+  opacity: 1;
+}
+
+.subtle .underline {
+  opacity: 0;
+}
+
+.subtle:hover .underline {
+  opacity: 0.3;
+}

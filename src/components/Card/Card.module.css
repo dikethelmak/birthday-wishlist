@@ -1,0 +1,26 @@
+.card {
+  border-radius: var(--radius-lg);
+  background-color: var(--color-bg-surface);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Variants ─────────────────────────────────────── */
+.elevated {
+  box-shadow: var(--shadow-md);
+}
+
+.outlined {
+  box-shadow: none;
+  border: 1px solid var(--color-border-subtle);
+}
+
+.flat {
+  box-shadow: none;
+  background-color: var(--color-bg-overlay);
+}
+
+/* ── Padding ─────────────────────────────────────── */
+.padding-none { padding: 0; }
+.padding-sm   { padding: var(--space-4); }
+.padding-md   { padding: var(--space-6); }
+.padding-lg   { padding: var(--space-8); }

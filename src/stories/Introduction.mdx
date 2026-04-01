@@ -1,0 +1,54 @@
+import { Meta } from '@storybook/blocks';
+
+<Meta title="Design System/Introduction" />
+
+# Birthday Design System
+
+A minimal, editorial design system built for the Birthday List app.
+Inspired by Scandinavian product design — clean type, a warm teal palette, and purposeful motion.
+
+---
+
+## Foundations
+
+| Token layer | File | Description |
+|---|---|---|
+| **Colors** | `tokens/colors.css` | Primitive palette + semantic aliases |
+| **Typography** | `tokens/typography.css` | Inter + mono, 8 sizes, 4 weights |
+| **Spacing** | `tokens/spacing.css` | 4px base scale, 0–160px |
+| **Effects** | `tokens/effects.css` | Shadows, radius, duration, easing, z-index |
+
+## Color palette
+
+The palette is extracted directly from the app's gradient background and formalized
+into semantic roles.
+
+- **Teal** — brand primary, surfaces, backgrounds
+- **Terracotta** — warmth, errors, emphasis
+- **Amber** — reserved/pending states
+- **Sage** — success, completed states
+- **Yellow** — highlights, attention
+- **Neutral** — text, borders, dividers
+
+## Components
+
+| Component | Description |
+|---|---|
+| `Button` | Ghost (animated underline), Solid, Outline — sm/md/lg |
+| `Text` | Body text with size, weight, mono, secondary, tertiary props |
+| `Heading` | h1–h6 with matching size scale |
+| `Input` | Minimal underline input with label, hint, error |
+| `Divider` | 1px separator — horizontal or vertical |
+| `Badge` | 6 colors × 3 variants (subtle/solid/outline) with optional dot |
+| `Link` | Animated underline anchor |
+| `Card` | Surface container — elevated, outlined, flat |
+| `Spinner` | Rotating loading indicator — sm/md/lg |
+| `Tooltip` | Lightweight overlay — 4 placements, optional delay |
+
+## Usage
+
+```tsx
+import { Button, Input, Badge, Tooltip } from '@birthday/design-system';
+// Import tokens in your app's root CSS:
+// @import '@birthday/design-system/tokens';
+```

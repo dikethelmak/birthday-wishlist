@@ -1,0 +1,63 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-family: var(--font-sans);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--letter-spacing-wide);
+  border-radius: var(--radius-full);
+  white-space: nowrap;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Sizes ───────────────────────────────────────── */
+.sm {
+  font-size: var(--font-size-xs);
+  padding: 2px var(--space-2);
+}
+
+.md {
+  font-size: var(--font-size-sm);
+  padding: var(--space-1) var(--space-3);
+}
+
+/* ── Dot ─────────────────────────────────────────── */
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: var(--radius-full);
+  background-color: currentColor;
+  flex-shrink: 0;
+}
+
+/* ── Colors × Variants ───────────────────────────── */
+
+/* default */
+.color-default.subtle  { background: var(--color-bg-overlay); color: var(--color-ink); }
+.color-default.solid   { background: var(--color-ink); color: var(--color-ink-inverse); }
+.color-default.outline { background: transparent; color: var(--color-ink); box-shadow: inset 0 0 0 1px var(--color-border-subtle); }
+
+/* teal */
+.color-teal.subtle  { background: var(--color-teal-100); color: var(--color-teal-700); }
+.color-teal.solid   { background: var(--color-teal-500); color: #fff; }
+.color-teal.outline { background: transparent; color: var(--color-teal-600); box-shadow: inset 0 0 0 1px var(--color-teal-300); }
+
+/* terracotta */
+.color-terracotta.subtle  { background: var(--color-terracotta-100); color: var(--color-terracotta-700); }
+.color-terracotta.solid   { background: var(--color-terracotta-500); color: #fff; }
+.color-terracotta.outline { background: transparent; color: var(--color-terracotta-600); box-shadow: inset 0 0 0 1px var(--color-terracotta-300); }
+
+/* amber */
+.color-amber.subtle  { background: var(--color-amber-100); color: var(--color-amber-700); }
+.color-amber.solid   { background: var(--color-amber-500); color: #fff; }
+.color-amber.outline { background: transparent; color: var(--color-amber-600); box-shadow: inset 0 0 0 1px var(--color-amber-300); }
+
+/* sage */
+.color-sage.subtle  { background: var(--color-sage-100); color: var(--color-sage-700); }
+.color-sage.solid   { background: var(--color-sage-500); color: #fff; }
+.color-sage.outline { background: transparent; color: var(--color-sage-600); box-shadow: inset 0 0 0 1px var(--color-sage-300); }
+
+/* yellow */
+.color-yellow.subtle  { background: var(--color-yellow-100); color: var(--color-yellow-600); }
+.color-yellow.solid   { background: var(--color-yellow-400); color: var(--color-neutral-900); }
+.color-yellow.outline { background: transparent; color: var(--color-yellow-600); box-shadow: inset 0 0 0 1px var(--color-yellow-300); }

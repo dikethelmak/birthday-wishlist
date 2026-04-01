@@ -1,0 +1,32 @@
+.text {
+  font-family: var(--font-sans);
+  color: var(--color-ink);
+  line-height: var(--line-height-normal);
+  -webkit-font-smoothing: antialiased;
+}
+
+.heading {
+  line-height: var(--line-height-snug);
+  letter-spacing: var(--letter-spacing-tight);
+}
+
+/* ── Sizes ───────────────────────────────────────── */
+.size-xs  { font-size: var(--font-size-xs); }
+.size-sm  { font-size: var(--font-size-sm); }
+.size-md  { font-size: var(--font-size-md); }
+.size-lg  { font-size: var(--font-size-lg); }
+.size-xl  { font-size: var(--font-size-xl); }
+.size-2xl { font-size: var(--font-size-2xl); }
+.size-3xl { font-size: var(--font-size-3xl); }
+.size-4xl { font-size: var(--font-size-4xl); }
+
+/* ── Weights ─────────────────────────────────────── */
+.weight-regular  { font-weight: var(--font-weight-regular); }
+.weight-medium   { font-weight: var(--font-weight-medium); }
+.weight-semibold { font-weight: var(--font-weight-semibold); }
+.weight-bold     { font-weight: var(--font-weight-bold); }
+
+/* ── Modifiers ───────────────────────────────────── */
+.mono      { font-family: var(--font-mono); }
+.secondary { color: var(--color-ink-secondary); }
+.tertiary  { color: var(--color-ink-tertiary); }
