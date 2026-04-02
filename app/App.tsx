@@ -1,9 +1,14 @@
 import { useState, useEffect, useRef } from 'react';
 import clsx from 'clsx';
+import emailjs from '@emailjs/browser';
 import {
   Card, Button, Input, Badge, Link, Text, Heading, Divider,
 } from '../src/components';
 import styles from './App.module.css';
+
+const EJS_SERVICE  = import.meta.env.VITE_EMAILJS_SERVICE_ID  as string | undefined;
+const EJS_TEMPLATE = import.meta.env.VITE_EMAILJS_TEMPLATE_ID as string | undefined;
+const EJS_KEY      = import.meta.env.VITE_EMAILJS_PUBLIC_KEY  as string | undefined;
 
 // ── Types ──────────────────────────────────────────────────────────────────
 
@@ -145,8 +150,16 @@ export default function App() {
     const name = claimerName.trim();
     if (!name) { setNameError('Please enter your name'); return; }
     if (!pendingId) return;
+    const gift = gifts.find(g => g.id === pendingId);
     setClaims(prev => ({ ...prev, [pendingId]: name }));
     closeModal();
+    if (EJS_SERVICE && EJS_TEMPLATE && EJS_KEY && gift) {
+      emailjs.send(EJS_SERVICE, EJS_TEMPLATE, {
+        item_name:    gift.name,
+        item_emoji:   gift.emoji || '🎁',
+        claimer_name: name,
+      }, { publicKey: EJS_KEY }).catch(() => {/* silent — don't block UX on email failure */});
+    }
   }
 
   function unclaim(id: string) {
