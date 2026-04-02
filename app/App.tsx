@@ -21,8 +21,8 @@ type View = 'guest' | 'admin';
 
 // ── Constants ──────────────────────────────────────────────────────────────
 
-const STORAGE_KEY   = 'birthday-wishlist-v1';
-const CLAIMS_KEY    = 'birthday-claims-v1';
+const STORAGE_KEY   = 'birthday-wishlist-v2';
+const CLAIMS_KEY    = 'birthday-claims-v2';
 const SESSION_KEY   = 'birthday-admin-unlocked';
 // Simple djb2 hash — good enough for a client-side birthday wishlist gate
 function hashStr(s: string): string {
