@@ -34,9 +34,15 @@ function hashStr(s: string): string {
 const ADMIN_HASH = hashStr('tee2026'); // pre-computed at build time
 
 const DEFAULT_GIFTS: Gift[] = [
-  { id: '1', name: 'Kindle Paperwhite',  price: '£139', store: 'Amazon',         url: 'https://amazon.co.uk',          emoji: '📚' },
-  { id: '2', name: 'Aesop hand cream',   price: '£28',  store: 'Aesop',          url: 'https://aesop.com',             emoji: '🫧' },
-  { id: '3', name: 'Linen notebook',     price: '£22',  store: 'Leuchtturm1917', url: 'https://leuchtturm1917.co.uk',  emoji: '📓' },
+  { id: '1775081239175', name: 'NISHANE Wūlóng Chá 50ML',                  price: '₦264,000',    store: 'Essenza',         url: 'https://www.essenza.ng/products/nishane-wulong-cha?_pos=3&_psq=nishane&_ss=e&_v=1.0',                                         emoji: '🏺'     },
+  { id: '1775081336845', name: 'Amélie Shoulder bag Lilac/Mustard/Green',   price: '₦60,000',     store: 'Bagsnco',         url: 'https://www.instagram.com/p/DUiPx4-CEQ5/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',                               emoji: '👜'     },
+  { id: '1775082518883', name: 'WRIST WATCH',                               price: '₦92,500',     store: 'Bankecoo',        url: 'https://www.instagram.com/p/DWTm5x4CCHX/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',                               emoji: '⌚️'    },
+  { id: '1775082610663', name: 'Polene Numéro Neuf East West',              price: '€440',        store: 'Polene',          url: 'https://www.polene-paris.com/products/numero-neuf-east-west-textured-cherry',                                              emoji: '👛'     },
+  { id: '1775083645866', name: 'Dress',                                     price: '₦120,000',    store: 'Lizandco',        url: 'https://www.lizandcoofficial.com/products/patch-dress',                                                                     emoji: '👗'     },
+  { id: '1775084408504', name: 'Money: 0079398999 / Access Bank',           price: '',            store: '',                url: '',                                                                                                                          emoji: '💸'     },
+  { id: '1775084555568', name: 'Money FX: Wise',                            price: '',            store: '',                url: 'https://wise.com/pay/me/thelmad8?utm_source=request_flow',                                                                  emoji: '💵💶💷' },
+  { id: '1775084952042', name: 'Adire Play Set',                            price: '₦30,000',     store: 'Bloom Womenwear', url: 'https://www.bloomwomenswear.com/products/Adire-Play-Set-p821142514',                                                        emoji: '👗'     },
+  { id: '1775085345752', name: 'Yobe Dress',                                price: '₦65,000',     store: 'Cassandra Collins', url: 'https://cassandracollins.co/products/yobe-dress?variant=51477330886965',                                                  emoji: '👗'     },
 ];
 
 // ── Storage helpers ────────────────────────────────────────────────────────
